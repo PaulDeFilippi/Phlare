@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03FEAA51FF6719FF6E198333 /* Pods_Phlare3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1ED17A0A56F6722C418378 /* Pods_Phlare3.framework */; };
+		4F40100E1D930AB400B45A35 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40100D1D930AB400B45A35 /* Location.swift */; };
 		4F790AA91D848850001FB639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F790AA81D848850001FB639 /* AppDelegate.swift */; };
 		4F790AAB1D848850001FB639 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F790AAA1D848850001FB639 /* WeatherVC.swift */; };
 		4F790AAE1D848850001FB639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F790AAC1D848850001FB639 /* Main.storyboard */; };
@@ -15,9 +16,12 @@
 		4F790AB31D848850001FB639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F790AB11D848850001FB639 /* LaunchScreen.storyboard */; };
 		4FA16E291D8B64D600F7E7A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA16E281D8B64D600F7E7A1 /* Constants.swift */; };
 		4FA16E2B1D8DE0EC00F7E7A1 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA16E2A1D8DE0EC00F7E7A1 /* CurrentWeather.swift */; };
+		4FFAFB871D90779200E43E1C /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFAFB861D90779200E43E1C /* Forecast.swift */; };
+		4FFAFB891D921DC500E43E1C /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFAFB881D921DC500E43E1C /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F40100D1D930AB400B45A35 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4F790AA51D848850001FB639 /* Phlare3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phlare3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F790AA81D848850001FB639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F790AAA1D848850001FB639 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
@@ -27,6 +31,8 @@
 		4F790AB41D848850001FB639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FA16E281D8B64D600F7E7A1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4FA16E2A1D8DE0EC00F7E7A1 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		4FFAFB861D90779200E43E1C /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		4FFAFB881D921DC500E43E1C /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		52D8E5CFDD74B1B1BA146B26 /* Pods-Phlare3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phlare3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phlare3/Pods-Phlare3.release.xcconfig"; sourceTree = "<group>"; };
 		6A1ED17A0A56F6722C418378 /* Pods_Phlare3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phlare3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97629216218DD736689CAFC4 /* Pods-Phlare3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phlare3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phlare3/Pods-Phlare3.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				4F790AB41D848850001FB639 /* Info.plist */,
 				4FA16E281D8B64D600F7E7A1 /* Constants.swift */,
 				4FA16E2A1D8DE0EC00F7E7A1 /* CurrentWeather.swift */,
+				4FFAFB861D90779200E43E1C /* Forecast.swift */,
+				4FFAFB881D921DC500E43E1C /* WeatherCell.swift */,
+				4F40100D1D930AB400B45A35 /* Location.swift */,
 			);
 			path = Phlare3;
 			sourceTree = "<group>";
@@ -220,8 +229,11 @@
 			files = (
 				4F790AAB1D848850001FB639 /* WeatherVC.swift in Sources */,
 				4F790AA91D848850001FB639 /* AppDelegate.swift in Sources */,
+				4FFAFB891D921DC500E43E1C /* WeatherCell.swift in Sources */,
 				4FA16E2B1D8DE0EC00F7E7A1 /* CurrentWeather.swift in Sources */,
 				4FA16E291D8B64D600F7E7A1 /* Constants.swift in Sources */,
+				4FFAFB871D90779200E43E1C /* Forecast.swift in Sources */,
+				4F40100E1D930AB400B45A35 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +277,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -315,6 +328,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -344,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97629216218DD736689CAFC4 /* Pods-Phlare3.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7Q65FMKJ4;
 				INFOPLIST_FILE = Phlare3/Info.plist;
@@ -359,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52D8E5CFDD74B1B1BA146B26 /* Pods-Phlare3.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7Q65FMKJ4;
 				INFOPLIST_FILE = Phlare3/Info.plist;
