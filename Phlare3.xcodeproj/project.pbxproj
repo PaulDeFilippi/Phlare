@@ -67,6 +67,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F0052371DA98DC0001C822B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F790AA81D848850001FB639 /* AppDelegate.swift */,
+				4F790AAA1D848850001FB639 /* WeatherVC.swift */,
+				4FFAFB881D921DC500E43E1C /* WeatherCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4F0052381DA98DCE001C822B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F790AB11D848850001FB639 /* LaunchScreen.storyboard */,
+				4F790AAC1D848850001FB639 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F0052391DA98DD8001C822B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FA16E281D8B64D600F7E7A1 /* Constants.swift */,
+				4FFAFB861D90779200E43E1C /* Forecast.swift */,
+				4FA16E2A1D8DE0EC00F7E7A1 /* CurrentWeather.swift */,
+				4F40100D1D930AB400B45A35 /* Location.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F00523A1DA98E4B001C822B /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				4F790AB41D848850001FB639 /* Info.plist */,
+				4F790AAF1D848850001FB639 /* Assets.xcassets */,
+			);
+			name = Resorces;
+			sourceTree = "<group>";
+		};
 		4F790A9C1D848850001FB639 = {
 			isa = PBXGroup;
 			children = (
@@ -88,17 +127,10 @@
 		4F790AA71D848850001FB639 /* Phlare3 */ = {
 			isa = PBXGroup;
 			children = (
-				4F790AA81D848850001FB639 /* AppDelegate.swift */,
-				4F790AAA1D848850001FB639 /* WeatherVC.swift */,
-				4F790AAC1D848850001FB639 /* Main.storyboard */,
-				4F790AAF1D848850001FB639 /* Assets.xcassets */,
-				4F790AB11D848850001FB639 /* LaunchScreen.storyboard */,
-				4F790AB41D848850001FB639 /* Info.plist */,
-				4FA16E281D8B64D600F7E7A1 /* Constants.swift */,
-				4FA16E2A1D8DE0EC00F7E7A1 /* CurrentWeather.swift */,
-				4FFAFB861D90779200E43E1C /* Forecast.swift */,
-				4FFAFB881D921DC500E43E1C /* WeatherCell.swift */,
-				4F40100D1D930AB400B45A35 /* Location.swift */,
+				4F0052391DA98DD8001C822B /* Model */,
+				4F0052381DA98DCE001C822B /* View */,
+				4F0052371DA98DC0001C822B /* Controller */,
+				4F00523A1DA98E4B001C822B /* Resorces */,
 			);
 			path = Phlare3;
 			sourceTree = "<group>";
@@ -139,7 +171,7 @@
 					4F790AA41D848850001FB639 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = V7Q65FMKJ4;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -360,13 +392,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Defilippi (8W55YYCJU9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = V7Q65FMKJ4;
 				INFOPLIST_FILE = Phlare3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Paul-DeFilippi.Phlare3";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Paul-DeFilippi.Phlare3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "41a7409e-f819-4f91-b8be-83afe718accf";
+				PROVISIONING_PROFILE_SPECIFIER = Phlare3Dev;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -376,13 +412,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paul Defilippi (V7Q65FMKJ4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paul Defilippi (V7Q65FMKJ4)";
 				DEVELOPMENT_TEAM = V7Q65FMKJ4;
 				INFOPLIST_FILE = Phlare3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Paul-DeFilippi.Phlare3";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Paul-DeFilippi.Phlare3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c5db48a2-7c2a-4196-9963-4d3723d359e9";
+				PROVISIONING_PROFILE_SPECIFIER = Phlare3AppStore;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -39,9 +39,6 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         
         currentWeather = CurrentWeather()
         
-        //currentWeather.downloadWeatherDetails {
-            //self.updateMainUI()
-        //}
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,7 +56,9 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
                     self.updateMainUI()
                 }
             }
+        
         } else {
+            
             locationManager.requestWhenInUseAuthorization()
             locationAuthorizationStatus()
         }
@@ -67,8 +66,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     
     func downloadForecastData(completed: @escaping DownloadComplete) {
         // Download forecast data for TableView
-        // let forecastURL = URL(string: FORECAST_URL)!
         Alamofire.request(FORECAST_URL, method: .get).responseJSON { response in
+            
             let result = response.result
             
             if let dict = result.value as? Dictionary<String, AnyObject> {
@@ -91,7 +90,6 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         
     }
     
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -113,6 +111,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     }
     
     func updateMainUI() {
+        
         dateLabel.text = currentWeather.date
         curentTempLabel.text = "\(currentWeather.currentTemp)\("\u{00B0}")"
         currentWeatherTypeLabel.text = currentWeather.weatherType

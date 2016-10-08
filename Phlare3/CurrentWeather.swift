@@ -19,7 +19,6 @@ class CurrentWeather {
         if _cityName == nil {
             _cityName = ""
         }
-        
         return _cityName
     }
     
@@ -40,7 +39,6 @@ class CurrentWeather {
         if _weatherType == nil {
             _weatherType = ""
         }
-        
         return _weatherType
     }
     
@@ -48,7 +46,6 @@ class CurrentWeather {
         if _currentTemp == nil {
             _currentTemp = 0.0
         }
-        
         return _currentTemp
     }
     
@@ -69,7 +66,6 @@ class CurrentWeather {
                     if let main = weather[0]["main"] as? String {
                         self._weatherType = main.capitalized
                         print(self._weatherType)
-                        
                     }
                 }
                 
@@ -86,9 +82,7 @@ class CurrentWeather {
                     }
                 }
             }
-            
             completed()
-            
         }
         
     }
